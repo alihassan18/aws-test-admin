@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    p {
+        @apply text-sm text-secondary;
+    }
+    h2 {
+        @apply text-2xl text-white font-display font-semibold;
+    }
+    h4 {
+        @apply text-sm text-white font-bold font-display;
+    }
+    .AtMention textarea {
+        @apply !font-display leading-[1.5] focus:outline-none focus:!ring-0 !text-secondary;
+    }
+    .EmojiPickerReact .epr-search-container input.epr-search {
+        @apply focus:shadow-outline block w-full rounded-md border bg-transparent text-black placeholder:text-davygrey focus:!border-primary focus:!outline-none focus:!ring-0 !border-borderColor;
+    }
+}
+.bd {
+    border: 1px solid red;
+}
+
+.AtScrollHide::-webkit-scrollbar {
+    width: 0 !important;
+    height: 0 !important;
+}
+.AtScrollHide {
+    scrollbar-width: none !important;
+}
+.AtShadowEffect {
+    box-shadow: 0px 4px 12px 2px rgba(0, 0, 0, 0.25),
+        0px 10px 15px -3px rgba(0, 0, 0, 0.1),
+        0px 4px 6px -2px rgba(0, 0, 0, 0.05),
+        0px 0px 0px 1px rgba(0, 0, 0, 0.05);
+}
+/* ##################################  Emoji Picker ###################################### */
+.EmojiPickerReact .epr-category-nav > button.epr-cat-btn:focus:before {
+    outline: none !important;
+    border: none !important;
+}
+.EmojiPickerReact .epr-search-container input.epr-search:focus {
+    background-color: transparent !important;
+    border: 1px solid #4aa9f1 !important;
+}
+
+.EmojiPickerReact .epr-body::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    scrollbar-width: none !important;
+}
+.EmojiPickerReact li.epr-emoji-category > .epr-emoji-category-label {
+    font-size: 16px;
+    color: #bfbfbf !important;
+    font-weight: 500 !important;
+}
+.EmojiPickerReact button.epr-btn {
+    height: 32px !important;
+    width: 32px !important;
+}
+.EmojiPickerReact .epr-preview {
+    height: auto !important;
+    padding-top: 8px !important;
+    padding-bottom: 8px !important;
+}
+.EmojiPickerReact .Flex.FlexRow img {
+    height: 25px !important;
+    width: 25px !important;
+}
+.EmojiPickerReact button.epr-btn img {
+    height: 100% !important;
+    width: 100% !important;
+}
+.EmojiPickerReact .epr-category-nav > button.epr-cat-btn {
+    font-size: 10px !important;
+    display: block;
+}
+.EmojiPickerReact .epr-skin-tones {
+    display: none !important;
+}
+.EmojiPickerReact .epr-category-nav {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+.uppy-Dashboard-poweredBy {
+    display: none !important;
+}
+/* ################################## End  Emoji Picker ###################################### */
